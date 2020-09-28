@@ -18,7 +18,11 @@ services:
       - type: volume
         source: apache-data
         target: /app
+      - type: volume
+        source: php-config
+        target: /etc/php
   
 volumes:
   mysql-data:
   apache-data:
+  php-config:
